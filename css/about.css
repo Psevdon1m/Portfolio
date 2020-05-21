@@ -8,6 +8,8 @@ body {
     background: black;
     max-width: 1200px;
     margin: 0 auto;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    
 }
 
 .main {
@@ -15,4 +17,8 @@ body {
     max-width: 1200px;
     margin: 0 auto;
   }
+
+.row-nav {
+    height: 56px;
+}
 

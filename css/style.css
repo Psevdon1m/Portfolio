@@ -26,7 +26,7 @@ body {
   
   h1 {
     font-weight: 700;
-    margin: 0;
+    margin-bottom: 8px;
     color: white;
     z-index: 2;
   }
@@ -41,13 +41,16 @@ body {
     margin: 0;
     margin-left: -20px;
     
+    
   }
  
   #nav-row a{
     color: black;
   }
 
-  
+  .row-nav{
+    height: 56px;
+  }
  
   .col-sm-2{
     color: black
@@ -243,9 +246,7 @@ body {
     font-size: 14px;
   }
  
-  .container-about {
-    margin-bottom: 8px;
-  }
+  
   
 @media(max-width: 768px){
   .home-content{
@@ -353,6 +354,11 @@ body {
 }
 
 @media(max-width: 375px){
+  h1.col-sm-6{
+    font-size: 1rem;
+    text-align: left;
+  }
+
   h2.about-me{
     position:absolute;
     top: -90px;

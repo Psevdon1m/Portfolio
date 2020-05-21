@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-div.row {
-    flex-wrap: nowrap;
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 .card {
@@ -14,6 +14,15 @@ div.row {
     scroll-behavior: smooth;
     overflow: auto;
     
+}
+
+a{
+    color: black;
+    
+}
+
+.row-nav {
+    height: 56px;
 }
 
 ::-webkit-scrollbar {
@@ -76,6 +85,7 @@ section.row {
     width: 100%;
     
     height: 100%;
+    max-height: 1024px;
     background: black;
     /* background: linear-gradient(to left, rgba(233,246,253,1) 0%,rgba(211,238,251,1) 100%); */
     z-index: -1;
@@ -83,8 +93,93 @@ section.row {
 
 /* Projects */
 
-#first-row{
-    height: 100vh;
+#first-row, #second-row{
+    height: 100%;
+    margin-bottom: 10px;
     
 }
 
+@media(max-width: 1024px){
+    .slider-exp{
+        height: 80%;
+    }
+    .home-content{
+        height: 65vh;
+    }
+}
+
+@media(max-width: 812px){
+    #first-row, #second-row{
+        height: auto;
+        margin-bottom: 0;
+        
+    }
+    #footer-row{
+        margin-top: -30px;
+    }
+    .col-sm-4{
+        height: auto;
+        
+        
+        flex: 0 0 100%;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+    .card{
+        height: auto;
+        width: 80vw;
+        margin: 30px auto;
+    }
+    p.col-sm-4 {
+        width: auto;
+        max-width: 30%;
+        
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .slider-exp{
+        height: 100%;
+    }
+
+     .home-content{
+        height: 75vh;
+    }
+}
+
+@media(max-width: 768px) {
+    .home-content{
+        height: 85vh;
+    }
+}
+
+@media(max-width: 736px) {
+    .home-content{
+        height: 65vh;
+    }
+}
+
+
+   
+@media(max-width: 576px) {
+    p.col-sm-4 {
+        max-width: 25%;
+    }
+    .home-content{
+        height: 80vh;
+    }
+}
+
+@media(max-width: 375px){
+    #first-row, #second-row{
+        height: auto;
+        
+    }
+    .card{
+        height: auto;
+    }
+    p.col-sm-4 {
+        max-width: 30%;
+    }
+    
+}
+    
